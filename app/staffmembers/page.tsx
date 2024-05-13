@@ -83,7 +83,7 @@ export default function Home() {
  
   <div className="mb-3">
   <label  className="form-label">Select Position:</label>
-    <select className="form-select" id="position" name="position" value={position}  onChange={(e) => setPosition(e.target.value)}>
+    <select className="form-select" id="position" name="position" value={position}  onChange={(e) => setPosition(e.target.value)} required>
       <option value="Unselected">Unselected</option>
       <option value="Kitchen">Kitchen</option>
       <option value="Service">Service</option>
@@ -92,7 +92,7 @@ export default function Home() {
   </div>
   <div className="mb-3">
   <label  className="form-label">Select Type of Business:</label>
-    <select className="form-select" id="btype" name="btype" value={btype}  onChange={(e) => setBtype(e.target.value)}>
+    <select className="form-select" id="btype" name="btype" value={btype}  onChange={(e) => setBtype(e.target.value)} required>
       <option value="Unselected">Unselected</option>
       <option value="Bar">Bar</option>
       <option value="Restaurant">Restaurant</option>
